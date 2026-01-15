@@ -1,0 +1,24 @@
+// make the animal struct for the impl
+struct Animal {
+    name  : string;
+    says  : string;
+}
+
+impl Animal { // animal impl
+    //hmm so this is how i think you do it???
+    fn new(name: string, says: string) -> Animal {
+        return Animal { name: name, says: says};
+    }
+
+    //just a simple example thingie
+    fn say(self) {
+        "{self.name} says {self.says}";
+    }
+}
+
+fn main() {
+    var amazingdoggie = Animal::new("greg", "bark");// make the animal
+    amazingdoggie.say();//"greg says bark"
+    return 0;
+}
+// i'm really starting to like this language honestly!!!
