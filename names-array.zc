@@ -1,0 +1,12 @@
+fn main() {
+    let names = [
+        "john",
+        "swag",
+        "squirrel",
+        "hemmy"
+    ];
+
+    for i in 0..names.len() {
+        "{names[i]}";
+    }
+}
