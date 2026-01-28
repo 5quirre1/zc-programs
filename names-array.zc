@@ -8,7 +8,7 @@ fn main() {
         "whereugoing hemmy"
     ];
 
-    let pattern = "swag";
+    let pattern = "\\bswag$";
 
     for i in 0..names.len() {
         let name = names[i];
