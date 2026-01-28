@@ -1,12 +1,21 @@
+import "std/regex.zc"
+
 fn main() {
     let names = [
-        "john",
-        "swag",
-        "squirrel",
-        "hemmy"
+        "john swag",
+        "swag swag",
+        "squirrel greg",
+        "whereugoing hemmy"
     ];
 
+    let pattern = "swag";
+
     for i in 0..names.len() {
-        "{names[i]}";
+        let name = names[i];
+        if (regex_match(pattern, name)) {
+            "{name} has last name swag";
+        } else {
+            "{name} has no last name swag.....";
+        }
     }
 }
